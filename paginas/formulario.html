@@ -9,24 +9,57 @@
 <body>
     <h1>Formulário</h1>
     <form action="#" method="post">
-        <label for="nome">Nome:</label><!--For direciona meu label para qual imput ele está designado-->
-        <input type="text" 
-        name="nome" 
-        id="nome" 
-        placeholder="Digite seu nome" 
-        size="20" 
-        maxlength="10"> 
-               
-        <!--input gera caixa de texto--> 
-        <!--placeholder gera escrito dentro da caixa de texto--> 
-        <!-- -->
-        <label for="nome">Senha:</label>
-        <input type="password" 
-        name="senha" 
-        id="senha" 
-        placeholder="Digite sua senha" 
-        size="20" 
-        minlength="8"> 
+        <fieldset>
+            <div>
+                <label for="nome">Nome:</label><!--For direciona meu label para qual imput ele está designado-->
+                <input type="text" 
+                name="nome" 
+                id="nome" 
+                placeholder="Digite seu nome" 
+                size="20" 
+                maxlength="10"> 
+            </div>        
+            <!--input gera caixa de texto--> 
+            <!--placeholder gera escrito dentro da caixa de texto--> 
+            <!--size mexe somente com o tamanho da caixa de texto-->
+            <!--Maxlengrh é a quantidade máxima de caracteres-->
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" 
+                name="senha" 
+                id="senha" 
+                placeholder="Digite sua senha" 
+                size="20" 
+                minlength="8"> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Funcionários</legend>
+            <div>
+                <label for=""> Profissão</label><br>
+                <input type="radio" name="prof" id="professor">
+                <label for=""> Professor</label>
+                <input type="radio" name="prof" id="estudante">
+                <label for="">Estudante</label>
+                <input type="radio" name="prof" id="outros" checked>
+                <label for="">Outros</label>
+            </div>
+            <div>
+                <label>Qual tecnologia domina:</label><br>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>                
+                <input type="checkbox" name="js" id="js">
+                <label for="js">JavaScript</label>                
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label>
+            </div>
+            <div>
+                <label for="recado">Deixe seu recado</label><br>
+                <textarea name="recado" id="recado" cols="30" rows="10"
+                placeholder="Deixe seu recado">
+                </textarea>
+            </div>
+        </fieldset>
     </form>
 </body>
 </html>
