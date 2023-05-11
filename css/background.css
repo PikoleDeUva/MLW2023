@@ -1,0 +1,17 @@
+.bgcolor {
+    background-color: burlywood;
+    height: 50px;
+}
+
+
+p {
+    background-color:black;
+    color: white;
+}
+
+
+.bgimage {
+    background-image:url(../imagens/Pinterest.jpg);
+    width: 500px;
+    height: 50px;
+}
